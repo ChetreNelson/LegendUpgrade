@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import * as path from "./path";
 
 import PrivateRoute from "./routes/PrivateRoute";
@@ -21,7 +21,7 @@ const Router = () => {
         <Route path={path.USER_DETAILS} element={<UserDetails />} />
         <Route path={path.CHECKOUT} element={<Payment />} />
       </Route>
-      <Route path="*" element={<MLRating />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };
