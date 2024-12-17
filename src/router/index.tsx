@@ -14,9 +14,9 @@ const Payment = lazy(() => import("views/Payment/Payment"));
 const Router = () => {
   return (
     <Routes>
-      <Route path={path.LOGIN} element={<Login />} />
+      {/* <Route path={path.LOGIN} element={<Login />} /> */}
       <Route path={path.REGISTER} element={<Register />} />
-      <Route path={path.PARENT_ROUTE} element={<MLRating />} />
+      <Route path={path.PARENT_ROUTE} element={<Login />} />
       <Route element={<PrivateRoute />}>
         <Route path={path.USER_DETAILS} element={<UserDetails />} />
         <Route path={path.CHECKOUT} element={<Payment />} />
