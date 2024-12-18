@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -10,6 +11,15 @@ export default {
     extend: {
       colors: {
         primary: "#898F9D",
+      },
+      screens: {
+        xs: "375px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1920px",
       },
     },
   },
