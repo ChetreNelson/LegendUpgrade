@@ -1,37 +1,15 @@
+import BoostListCard from "components/RatingBoost/BoostListCard";
 import { FaGreaterThan } from "react-icons/fa";
 const MLRatingBoost = () => {
   return (
     <div className="h-full flex-1 flex flex-col">
       <h1>Mobile Legends Rating Boost</h1>
       <div className="bg-black">
-        <div>
-          <img
-            className="size-40"
-            src="https://i.pinimg.com/474x/04/d4/de/04d4de165eb3da7a72673e3f2db82a7e.jpg"
-            alt="myrank"
-          />
-          <h2>My current rank</h2>
-          <div className="flex flex-col">
-            <span>Master</span>
-            <span>Master</span>
-            <span>Master</span>
-          </div>
-        </div>
+        <BoostListCard />
         <div>
           <FaGreaterThan size={40} className="rotate-90 sm:rotate-0" />
         </div>
-        <div>
-          <img
-            className="size-40"
-            src="https://i.pinimg.com/736x/6a/1c/a9/6a1ca96185dd0d501aa81d5751516862.jpg"
-            alt="ranktobe"
-          />
-          <h2>I want to be</h2>
-          <div className="flex flex-col">
-            <span>grandmaster</span>
-            <span>division v</span>
-          </div>
-        </div>
+        <BoostListCard />
         <div className="flex w-full">
           <div className="flex w-1/2 flex-col">
             <span>
