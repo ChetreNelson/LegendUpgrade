@@ -1,15 +1,18 @@
-
 import AdditionalChargeList from "../AdditionalChargeList";
 import FirstSection from "./FirstSection";
 const MLRatingBoost = () => {
+  const totalAmount = 6;
   return (
     <div className="h-full flex-1 w-full ">
       <h1>Mobile Legends Rating Boost</h1>
       <div className="bg-black flex flex-col items-center  ">
-       <FirstSection/>
+        <FirstSection />
         <AdditionalChargeList />
         <div className="w-full flex flex-col items-center gap-2">
-          <span>amount</span>
+          <span className="flex">
+            {`${totalAmount}`}
+            <p className="text-yellow-500">$</p>
+          </span>
           <p>
             Estimated time for boost:
             <span className="text-yellow-500">5 hours</span>
